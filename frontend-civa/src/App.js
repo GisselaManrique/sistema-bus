@@ -1,37 +1,37 @@
-import React from "react";
+/*import React from "react";
 import Buses from "./componentes/Buses";
-/*
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}*/
+import DetalleBus from "./componentes/DetalleBus";
+
 
 function App() {
   return (
     <div className="App">
-      <Buses />
+      <DetalleBus />
     </div>
   );
 }
 
 
+export default App;*/
+
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import DetalleBus from "./componentes/DetalleBus";
+import Buses from "./componentes/DetalleBus";
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/bus" element={<Buses />}/>
+        <Route path="/bus/:id" element={<DetalleBus />} /> 
+      </Routes>
+    </Router>
+  );
+}
+
 export default App;
+
 
 
 
