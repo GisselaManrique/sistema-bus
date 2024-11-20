@@ -3,7 +3,7 @@ Este proyecto es una aplicación realizado para un reto técnico.
 ## Tabla de Contenido
 1. [Instalación](#instalación)
 2. [Uso](#uso)
-3. [Tecnologías Usadas](#Tecnologías Usadas)
+3. [Tecnologías Usadas](#TecnologíasUsadas)
 
 ## Instalación
 1. Clona este repositorio:
